@@ -14,9 +14,9 @@ Gem::Specification.new do |s|
   s.files             = `git ls-files`.split("\n")
   s.test_files        = `git ls-files -- spec/*`.split("\n")
 
-  s.add_dependency  'refinerycms-core',     '~> 3.0.0'
-  s.add_dependency  'refinerycms-settings', '~> 3.0.0'
+  s.add_dependency  'refinerycms-core',     '>= 3.0.0', '< 4.0'
+  s.add_dependency  'refinerycms-settings', '>= 3.0.0', '< 4.0'
   s.add_dependency  'filters_spam',         '~> 0.2'
-  s.add_dependency  'actionmailer',        '~> 4.2.4'
+  s.add_dependency  'actionmailer',        '>= 4.2.4', '< 5.1'
   s.add_dependency  'httpclient'
 end
